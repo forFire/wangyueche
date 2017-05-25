@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sichuang.service.impl.dao.impl.mybatis.PassengerEvaluationStatMapper">
+    <select id="listStat" resultType="com.sichuang.bean.vo.statistics.PassengerEvaluationStat">
+        SELECT company_id,avg(driver_score) AS driverScore,avg(vehicle_score) AS vehicleScore,avg(service_score) AS serviceScore
+        FROM passenger_evaluation
+        WHERE company_id =#{companyId,jdbcType=VARCHAR} AND (evaluate_time BETWEEN #{startDate} AND #{endDate})
+        GROUP BY company_id;
+    </select>
+</mapper>

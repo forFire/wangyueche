@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sichuang.service.impl.dao.impl.mybatis.VehicleOrderTakingMapper">
+    <select id="listByOrderAmount" resultType="com.sichuang.bean.vo.statistics.VehicleOrderTaking">
+        SELECT
+  company_id AS companyId,
+  count(*)   AS vehicleAmount
+FROM (SELECT
+        company_id,
+        vehicle_no,
+        count(*) AS amount
+      FROM operate_depart_arrive
+      WHERE order_match_time BETWEEN 1 AND 2
+      GROUP BY company_id, vehicle_no
+      HAVING amount BETWEEN #{startDate,jdbcType=BIGINT} AND #{endDate,jdbcType=BIGINT}) d
+WHERE company_id = #{companyId,jdbcType=VARCHAR}
+GROUP BY companyId;
+    </select>
+</mapper>

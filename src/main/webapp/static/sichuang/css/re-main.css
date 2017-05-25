@@ -1,0 +1,19 @@
+
+/*一级菜单项添加为6项，整体左移*/
+.navWrap {
+    margin-left: 50px;
+    height: 100%;
+    width: 800px;
+    position: relative;
+}
+/*取消二级菜单中a标签的默认风格*/
+a{
+    text-decoration: none;
+}
+/*弹出框*/
+.layer {
+    height: 70%;
+    width: 80%;
+    background: #eeeeee;
+    overflow: hidden;
+}

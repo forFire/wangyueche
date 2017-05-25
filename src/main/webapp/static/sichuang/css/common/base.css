@@ -1,0 +1,239 @@
+﻿/**
+ * Created by wangpeng on 2017/3/27.
+ */
+input[type=text],input[type=password],select{
+    width: 125px;
+    border: 1px solid #d8e2ef;
+    background: #fff;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 3px;
+}
+
+input[type=text].open-input {
+    width: 160px;
+!important;
+}
+.datagrid-cell, .datagrid-cell-group, .datagrid-header-rownumber, .datagrid-cell-rownumber{
+    white-space:normal;
+    word-warp:break-word;
+    word-break:break-all;
+}
+.datagrid-header td, .datagrid-body td, .datagrid-footer td,.datagrid-pager td{
+    vertical-align:middle;
+    text-align: center;
+}
+.conWrap .datagrid-view{
+    overflow-x:auto;
+}
+.panel-header, .datagrid-wrap{
+    /*  box-sizing:border-box; */
+}
+.conWrap{
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: #666666;
+}
+.opWrap{
+    width: 100%;
+}
+.opTitle{
+    height: 30px;
+    background: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    color: #333333;
+    font-size:14px;
+    line-height: 30px;
+    text-indent: 20px;
+    border-radius: 8px  8px 0px 0px;
+}
+.searchWrap{
+    border: 1px solid #e5e5e5;
+    border-top:none ;
+    background: #ffffff;
+    padding-bottom: 10px;
+}
+.txtWrap{
+    line-height: 50px;
+    display: inline-block;
+    margin: 0 13px;
+    text-align: center;
+    font-size: 12px;
+}
+.txtWrap input[type=text],.txtWrap select{
+    border: 1px solid #cccccc;
+    font-size: 12px;
+    width: 110px;
+}
+
+#oMap {
+    background: #3379b4;
+    color: #fff;
+    margin: 0px;
+    padding: 1px;
+    border-radius: 3px;
+    cursor: pointer;
+    /* display: inline-block; */
+}
+
+.opBtn{
+    background: #3379b4;
+    color: #fff;
+    margin:0 10px;
+    padding: 5px 16px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+}
+.opBtn:hover,.opBtn.active{
+    font-weight:bolder;
+}
+.opBtn img{
+    vertical-align:middle;
+}
+/*新添加 yub*/
+.smallBtn{
+    background: #3379b4;
+    color: #fff;
+    margin: 0;
+    padding: 2px 6px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.atoolbar{
+    background: #fafafa;
+    border: 1px solid #d3d3d3;
+    border-bottom: none;
+}
+.atoolbar a{
+    /* display:none; */
+    line-height:24px;
+    color:#000;
+    text-decoration:none;
+    border:1px solid transparent;
+    padding:0 6px 0px 22px;
+}
+.atoolbar a:hover{
+    background-color:#e2e2e2;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+.atoolbar #backlink:hover{
+    background:none;
+    border-radius:0;
+    border:1px solid transparent;
+    color: #444;
+    display: inline-block;
+    line-height: 24px;
+    margin-left: 8px;
+    padding: 0 9px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.datagrid .panel-body{
+    border-color: #cccccc;
+    width: 1052px !important
+}
+/*新添加 yub*/
+.layerCon .txtWrap{
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+}
+.layerCon .txtName{
+    line-height: 50px;
+    color:#527aab;
+    font-size: 14px;
+    display: inline-block;
+    width: 90px;
+}
+.layerCon{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tableTabWrap {
+    height: 26px;
+    padding-top: 10px;
+    position: relative;
+    width: 100%;
+}
+.tableTab{
+    background: #aaaaaa none repeat scroll 0 0;
+    border-radius: 1px 1px 0 0;
+    color: #ffffff;
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 2px;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    border-left:1px solid #cccccc ;
+    border-right:1px solid #cccccc ;
+}
+.tableTabWrap .active,.tableTabWrap .tableTab:hover{
+    border-top: 2px solid #2baef1 ;
+    background: none;
+    color: #333333;
+
+}
+.dataChart,.dataChartWrap{
+    width:100%;
+    height:400px;
+}
+.dataChartCellWrap{
+    width: 50%;
+    float: left;
+}
+.dataChartCell{
+    height:400px;
+}
+.addicon{
+    background:url('../../script/lib/easyui/themes/icons/edit_add.png') no-repeat 3px center;
+}
+.editicon{
+    background:url('../../script/lib/easyui/themes/icons/pencil.png') no-repeat 3px center;
+}
+.detailicon{
+    background:url('../../script/lib/easyui/themes/icons/detail.png') no-repeat 3px center;
+}
+.seticon{
+    background:url('../../script/lib/easyui/themes/icons/set.png') no-repeat 3px center;
+}
+.removeicon{
+    background:url('../../script/lib/easyui/themes/icons/edit_remove.png') no-repeat 3px center;
+}
+.okicon{
+    background:url('../../script/lib/easyui/themes/icons/ok.png') no-repeat 3px center;
+}
+.noicon{
+    background:url('../../script/lib/easyui/themes/icons/no.png') no-repeat 3px center;
+}
+.manicon{
+    background:url('../../script/lib/easyui/themes/icons/man.png') no-repeat 3px center;
+}
+.qrcodeicon{
+    background:url('../../script/lib/easyui/themes/icons/qrcode.png') no-repeat 3px center;
+}
+.traceicon{
+    background:url('../../script/lib/easyui/themes/icons/trace.png') no-repeat 3px center;
+}
+.searchicon{
+    background:url('../../script/lib/easyui/themes/icons/search.png') no-repeat 3px center;
+}
+.voiceonicon{
+    background:url('../../script/lib/easyui/themes/icons/voiceon.png') no-repeat 3px center;
+}
+.voiceofficon{
+    background:url('../../script/lib/easyui/themes/icons/voiceoff.png') no-repeat 3px center;
+}
+.homeicon{
+    background:url('../../script/lib/easyui/themes/icons/home.png') no-repeat 3px center;
+}
+.downicon{
+    background:url('../../script/lib/easyui/themes/icons/down.png') no-repeat 3px center;
+}
